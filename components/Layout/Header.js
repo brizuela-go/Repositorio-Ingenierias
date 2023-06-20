@@ -3,7 +3,7 @@ import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import LogoVPN from "../../public/assets/Logo.svg";
+import Logo from "../../public/assets/Logo.svg";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -23,7 +23,7 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+            <Logo className="h-8 w-auto" />
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -42,7 +42,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 a")
               }
             >
-              About
+              Acerca
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -60,7 +60,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Feature
+              Carreras
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -78,7 +78,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Proyectos
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -96,16 +96,16 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Testimonial
+              Profesores
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
+                  Inicia Sesión
               </a>
             </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+            <ButtonOutline>Registrate</ButtonOutline>
           </div>
         </nav>
       </header>
