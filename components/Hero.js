@@ -4,23 +4,25 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import { BsLightbulbFill, BsBookHalf } from "react-icons/bs";
+import { FaUser } from "react-icons/fa";
 
 const Hero = ({
   listUser = [
     {
-      name: "Users",
-      number: "390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
+      name: "Futuros ingenieros",
+      number: "100",
+      icon: <FaUser className="text-orange-500" />,
     },
     {
-      name: "Locations",
-      number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
+      name: "Proyectos",
+      number: "154",
+      icon: <BsLightbulbFill className="text-orange-500" />,
     },
     {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
+      name: "Cursos",
+      number: "12",
+      icon: <BsBookHalf className="text-orange-500" />,
     },
   ],
 }) => {
@@ -72,7 +74,7 @@ const Hero = ({
               >
                 <div className="flex mx-auto w-40 sm:w-auto">
                   <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-                    <img src={listUsers.icon} className="h-6 w-6" />
+                    {listUsers.icon}
                   </div>
                   <div className="flex flex-col">
                     <p className="text-xl text-black-600 font-bold">
