@@ -23,14 +23,15 @@ const Spaces = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
             >
-              Trusted by Thousands of Happy Customer{" "}
+              Los mejores profesores para el mundo{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
             >
-              These are the stories of our customers who have joined us with
-              great pleasure when using this crazy feature.
+              Nuestros profesores son los mejores en su área, con experiencia
+              laboral y académica, con un alto nivel de preparación y
+              especialización.
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
@@ -84,29 +85,24 @@ const Spaces = () => {
             >
               {/* <Netflix className="h-18 w-auto" /> */}
               <img
-                src="/assets/Icon/amazon.png"
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
+                src="/assets/green_chile.webp"
+                className="h-14 w-auto mt-4 lg:mt-2 hue-rotate-180 filter brightness-0 opacity-10"
+                alt="green chile"
               />
               <img
-                src="/assets/Icon/netflix.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
+                src="/assets/iditlogo.png"
+                className="h-28 w-auto mt-4 lg:mt-2 hue-rotate-180 filter brightness-0 opacity-10"
+                alt="idit"
               />
               <img
-                src="/assets/Icon/reddit.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
+                src="/assets/capeltic.webp"
+                className="h-14 w-auto mt-4 lg:mt-2 hue-rotate-180 filter brightness-0 opacity-10"
+                alt="capeltic"
               />
               <img
-                src="/assets/Icon/discord.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/spotify.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
+                src="/assets/ihs.png"
+                className="h-24 w-auto mt-4 lg:mt-2 hue-rotate-180 filter brightness-100 opacity-10"
+                alt="ihs"
               />
             </motion.div>
           </ScrollAnimationWrapper>
@@ -115,11 +111,14 @@ const Spaces = () => {
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Subscribe Now for <br /> Get Special Features!
+                    Suscríbete <br /> para más información
                   </h5>
-                  <p>Let's subscribe with us and find the fun.</p>
+                  <p className="mt-3">
+                    Recibe información sobre nuestros cursos, repositorios,
+                    promociones y eventos.
+                  </p>
                 </div>
-                <ButtonPrimary>Get Started</ButtonPrimary>
+                <ButtonPrimary>Empieza ahora</ButtonPrimary>
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"

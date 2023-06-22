@@ -5,10 +5,10 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits.",
+  "Ingeniería Química",
+  "Ingeniería Mecatrónica",
+  "Ingeniería en Sistemas Computacionales",
+  "Ingeniería Industrial",
 ];
 
 const Feature = () => {
@@ -23,12 +23,13 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Illustration2.png"
+              src="/assets/idit.jpg"
               alt="VPN Illustrasi"
               layout="responsive"
+              className="rounded-xl shadow-xl"
               quality={100}
-              height={414}
-              width={508}
+              height={444}
+              width={538}
             />
           </motion.div>
         </ScrollAnimationWrapper>
@@ -38,11 +39,10 @@ const Feature = () => {
             variants={scrollAnimation}
           >
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              We Provide Many Features You Can Use
+              Nuestros cursos
             </h3>
             <p className="my-2 text-black-500">
-              You can explore the features that we provide with fun and have
-              their own functions each feature.
+              Compartiendo tendencia, innovación y creatividad a los alumnos.
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (
