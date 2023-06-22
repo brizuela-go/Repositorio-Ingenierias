@@ -61,7 +61,7 @@ const Footer = () => {
             Universidad Iberoamericana Puebla
           </p>
         </div>
-        <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
+        <div className=" row-span-2 sm:col-span-3 sm:col-start-8 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Información</p>
           <ul className="text-black-500 ">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
@@ -84,24 +84,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Dummy Text</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Lol{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              FAQ{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Tutoriales{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Acerca de{" "}
-            </li>
-          </ul>
-        </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
+        <div className="row-span-2 sm:col-span-3 sm:col-start-10 sm:col-end-13 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Políticas</p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">

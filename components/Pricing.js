@@ -44,11 +44,15 @@ const Pricing = () => {
                   },
                 }}
               >
-                <img class="rounded-t-lg" src="/assets/hero1.jpg" alt="" />
+                <img
+                  class="rounded-t-lg h-52 min-h-full object-cover"
+                  src="/assets/proyecto1.jpg"
+                  alt=""
+                />
                 <div class="p-5">
                   <a href="#">
                     <h5 class="mb-2 text-2xl text-gray-900">
-                      Nombre del proyecto
+                      Proyecto ing. civil
                     </h5>
                   </a>
                   <p class="mb-3 text-gray-700">
@@ -69,11 +73,15 @@ const Pricing = () => {
                   },
                 }}
               >
-                <img class="rounded-t-lg" src="/assets/hero1.jpg" alt="" />
+                <img
+                  class="rounded-t-lg h-52 object-cover min-w-full"
+                  src="/assets/proyecto2.jpg"
+                  alt=""
+                />
                 <div class="p-5">
                   <a href="#">
                     <h5 class="mb-2 text-2xl text-gray-900">
-                      Nombre del proyecto
+                      Proyecto ing. mecatrónica
                     </h5>
                   </a>
                   <p class="mb-3 text-gray-700">
@@ -94,11 +102,15 @@ const Pricing = () => {
                   },
                 }}
               >
-                <img class="rounded-t-lg" src="/assets/hero1.jpg" alt="" />
+                <img
+                  class="rounded-t-lg h-52 min-h-full object-cover"
+                  src="/assets/proyecto3.jpg"
+                  alt=""
+                />
                 <div class="p-5">
                   <a href="#">
                     <h5 class="mb-2 text-2xl text-gray-900">
-                      Nombre del proyecto
+                      Proyecto ing. en sistemas
                     </h5>
                   </a>
                   <p class="mb-3 text-gray-700">
@@ -119,11 +131,15 @@ const Pricing = () => {
                   },
                 }}
               >
-                <img class="rounded-t-lg" src="/assets/hero1.jpg" alt="" />
+                <img
+                  class="rounded-t-lg h-52 min-w-full object-cover"
+                  src="/assets/proyecto4.jpg"
+                  alt=""
+                />
                 <div class="p-5">
                   <a href="#">
                     <h5 class="mb-2 text-2xl text-gray-900">
-                      Nombre del proyecto
+                      Proyecto ing. química
                     </h5>
                   </a>
                   <p class="mb-3 text-gray-700">
