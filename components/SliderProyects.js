@@ -11,46 +11,7 @@ import { collection, doc, getDocs } from "firebase/firestore";
 import { getDoc } from "firebase/firestore";
 import { get } from "jquery";
 
-const SliderProyects = ({
-  listTestimoni = [
-    {
-      name: "Rafael Pérez ",
-      image: "/assets/rafa.jpg",
-      city: "Académico de Tiempo",
-      country: "SC",
-      rating: "5",
-      testimoni:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, laboris nisi ut aliquip ex ea commodo consequat. ",
-    },
-    {
-      name: "Antonio Benítez",
-      image: "/assets/benitez.jpg",
-      city: "PhD",
-      country: "SC",
-      rating: "5",
-      testimoni:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, laboris nisi ut aliquip ex ea commodo consequat. ",
-    },
-    {
-      name: "Oliver Ochoa",
-      image: "/assets/oliver.jpg",
-      city: "Académico de Tiempo",
-      country: "M",
-      rating: "5",
-      testimoni:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, laboris nisi ut aliquip ex ea commodo consequat. ",
-    },
-    {
-      name: "Adrían Maldonado",
-      image: "/assets/adrian.jpg",
-      city: "Ingeniero",
-      country: "Automotriz",
-      rating: "5",
-      testimoni:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco, laboris nisi ut aliquip ex ea commodo consequat. ",
-    },
-  ],
-}) => {
+const SliderProyects = ({}) => {
   const settings = {
     dots: true,
     customPaging: function (i) {
@@ -86,13 +47,6 @@ const SliderProyects = ({
   const [sliderRef, setSliderRef] = useState(null);
   const [projects, setProjects] = useState([]);
 
-  //get all db project documents
-  //   const getProjects = async () => {
-  //     const coll_projects = await getDocs(collection(db, "projects"));
-  //     console.log(coll_projects.docs);
-  //   };
-
-  //   getProjects();
   const getProjects = async () => {
     const projects = [];
     const querySnapshot = await getDocs(collection(db, "projects"));
@@ -102,7 +56,6 @@ const SliderProyects = ({
       projects.push(project);
     });
     setProjects(projects);
-    console.log(projects);
   };
 
   useEffect(() => {
@@ -136,7 +89,7 @@ const SliderProyects = ({
           </div>
         ))}
       </Slider>
-      <div className="flex w-full items-center justify-end">
+      <div className="flex w-full items-center justify-center mt-24 md:justify-end md:mt-0">
         <div className="flex flex-none justify-between w-auto mt-14">
           <div
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
