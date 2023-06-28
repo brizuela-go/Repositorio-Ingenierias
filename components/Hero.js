@@ -41,12 +41,13 @@ const Hero = ({
             variants={scrollAnimation}
           >
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-100   leading-normal">
-                DEPARTAMENTO DE <strong>CIENCIAS E INGENIERÍAS</strong>
+              <h1 className="text-3xl lg:text-4xl xl:text-6xl font-medium text-gray-100 mb-6 leading-normal tracking-wide">
+                DEPARTAMENTO DE
+                <p className="text-white-300 tracking-wide">
+                  CIENCIAS E INGENIERÍAS
+                </p>
               </h1>
-              <p className="text-gray-100 mt-4 mb-6">
-                INSTITUTO DE DISEÑO E INOVACIÓN TECONLÓGICA
-              </p>
+
               <ButtonPrimary>Conoce más</ButtonPrimary>
             </div>
             <div className="flex w-full">

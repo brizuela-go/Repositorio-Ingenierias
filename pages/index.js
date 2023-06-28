@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import Spaces from "../components/Spaces";
+import Profesores from "../components/Profesores";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Layout imgSrc={"assets/Logo.svg"}>
         <Hero />
         <Pricing />
-        <Feature />
+        <Profesores />
         <Spaces />
+        {/* <Feature /> */}
       </Layout>
     </>
   );

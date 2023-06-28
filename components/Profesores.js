@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const Pricing = () => {
+const Profesores = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -16,22 +16,20 @@ const Pricing = () => {
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="proyects"
     >
-      <div className="px-6 sm:px-8 lg:px-16 mt-10 mx-auto flex flex-col w-full justify-center">
+      <div className="px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-5xl font-medium text-black-600 leading-relaxed mb-8"
+              className="text-2xl sm:text-3xl lg:text-5xl font-medium text-black-600 leading-relaxed"
             >
-              Núcleo académico
+              Profesores
             </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 my-2 text-2xl"
-            >
-              MEMBSA (Mecatrónica, Electrónica, Biomédica, Sistemas y
-              Autoomotriz)
-            </motion.p>
+          </ScrollAnimationWrapper>
+          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+            <motion.div variants={scrollAnimation}>
+              <Testimoni />
+            </motion.div>
           </ScrollAnimationWrapper>
           {/* <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-4 gap-4 lg:gap-14 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper>
@@ -157,4 +155,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Profesores;
