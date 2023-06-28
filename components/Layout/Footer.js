@@ -6,7 +6,7 @@ import Instagram from "../../public/assets/Icon/instagram.svg";
 import Link from "next/link";
 import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
 
-const Footer = () => {
+const Footer = ({ imgSrc }) => {
   return (
     <div className="bg-white-300 pt-44 pb-24">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
@@ -19,7 +19,7 @@ const Footer = () => {
             decoding="async"
             data-nimg="1"
             className="filter brightness-0 hue-rotate-180  mb-6"
-            src="assets/Logo.svg"
+            src={imgSrc}
           ></img>
           <p className="mb-4">
             <strong className="font-medium">

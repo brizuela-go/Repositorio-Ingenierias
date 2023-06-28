@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 
-const Header = () => {
+const Header = ({ imgSrc }) => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -23,16 +23,18 @@ const Header = () => {
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             {/* <Logo className="h-8 w-auto tex"/> */}
-            <img
-              alt="logo"
-              loading="lazy"
-              width="100"
-              height="100"
-              decoding="async"
-              data-nimg="1"
-              className="filter brightness-0 hue-rotate-180"
-              src="assets/Logo.svg"
-            ></img>
+            <a href="/">
+              <img
+                alt="logo"
+                loading="lazy"
+                width="100"
+                height="100"
+                decoding="async"
+                data-nimg="1"
+                className="filter brightness-0 hue-rotate-180"
+                src={imgSrc}
+              ></img>
+            </a>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -69,7 +71,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Proyectos
+              Academia
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -87,7 +89,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Cursos
+              Laboratorios
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -105,7 +107,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Espacios
+              Proyectos
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">

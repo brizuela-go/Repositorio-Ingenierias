@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <SeoHead title="Repositorio Ingenierías Ibero" />
-      <Layout>
+      <Layout imgSrc={"assets/Logo.svg"}>
         <Hero />
         <Pricing />
         <Feature />
