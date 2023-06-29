@@ -57,6 +57,7 @@ const Pricing = () => {
             {cores.map((core, index) => (
               <ScrollAnimationWrapper>
                 <motion.div
+                  key={index}
                   variants={scrollAnimation}
                   className="border-2 border-gray-500 rounded-xl "
                   whileHover={{
@@ -71,7 +72,7 @@ const Pricing = () => {
                     src={core.illustration}
                     alt={core.id}
                   />
-                  <div class="p-5 h-52 flex flex-col justify-center items-center ">
+                  <div class="p-5 h-52 flex flex-col justify-between items-stretch ">
                     <a href={core.href}>
                       <h5 class="mb-2 text-2xl text-gray-900 text-center hover:underline transition duration-150 ease-in-out ">
                         {core.id}
