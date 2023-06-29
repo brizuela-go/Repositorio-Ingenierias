@@ -21,7 +21,7 @@ const Profesores = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-5xl font-medium text-black-600 leading-relaxed"
+              className="text-2xl sm:text-3xl lg:text-5xl font-medium text-black-600 leading-relaxed text-center"
             >
               Profesores
             </motion.h3>

@@ -15,6 +15,25 @@ export async function getServerSideProps(context) {
       id: "MEMBSA",
       name: "MEMBSA (Mecatrónica, Electrónica, Mecánica, Biomédica, Sistemas y Automotriz)",
       illustration: "/../assets/membsa.svg",
+      href: "/nucleos/MEMBSA",
+    },
+    {
+      id: "LIN",
+      name: "LIN (Logística, Industrial y Negocios)",
+      illustration: "/../assets/lin.svg",
+      href: "/nucleos/LIN",
+    },
+    {
+      id: "QB",
+      name: "QB (Química y Biotecnología)",
+      illustration: "/../assets/qb.svg",
+      href: "/nucleos/QB",
+    },
+    {
+      id: "CIVIL",
+      name: "Civil",
+      illustration: "/../assets/civil.svg",
+      href: "/nucleos/CIVIL",
     },
   ];
 
