@@ -87,7 +87,7 @@ const Repositorio = ({ corename, coreillustration, serializedRepoData }) => {
               Nucleo Académico
             </h2>
           </div>
-          <Image src={coreillustration} width={2000} height={400} />
+          <img src={coreillustration} height={100} width={500} />
         </div>
         <div className="my-36">
           <h3 className="text-5xl font-medium">Proyectos Destacados</h3>
