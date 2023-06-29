@@ -95,7 +95,7 @@ const Repositorio = ({ corename, coreillustration, serializedRepoData }) => {
             {repoData.map((project, index) => (
               <div
                 key={index}
-                className="flex lg:flex-row flex-col justify-between space-x-20 p-10  rounded-lg shadow-lg bg-[#F8F8F8]   "
+                className="flex lg:flex-row flex-col justify-between space-x-20 p-10  rounded-lg shadow-lg bg-card-100   "
               >
                 <div className="flex flex-col">
                   <h4 className="text-3xl font-medium ">{project.name}</h4>

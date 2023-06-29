@@ -40,6 +40,9 @@ module.exports = {
         400: "#AFB5C0",
         500: "#DDDDDD",
       },
+      card: {
+        100: "#F8F8F8",
+      },
       blue: {
         300: "#93c5fd",
       },
