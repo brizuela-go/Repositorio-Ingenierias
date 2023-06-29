@@ -77,10 +77,10 @@ const Repositorio = ({ corename, coreillustration, serializedRepoData }) => {
         <meta name="description" content={corename} />
         <link rel="icon" href="/assets/favicon.ico" />
       </Head>
-      <div className="md:m-36 m-14 my-36 ">
-        <div className="flex justify-between">
+      <div className="md:m-36 mx-14 my-36 ">
+        <div className="md:flex justify-between flex-col md:flex-row">
           <div className="flex flex-col my-20">
-            <h1 className="text-left text-5xl font-medium leading-snug">
+            <h1 className="text-left  text-5xl font-medium leading-snug">
               {corename}
             </h1>
             <h2 className="mt-10 text-left text-5xl font-medium text-orange-500">
