@@ -95,7 +95,7 @@ const Repositorio = ({ corename, coreillustration, serializedRepoData }) => {
             {repoData.map((project, index) => (
               <div
                 key={index}
-                className="flex lg:flex-row flex-col justify-between space-x-20 p-10 bg-white rounded-lg shadow-lg bg-[#F8F8F8] "
+                className="flex lg:flex-row flex-col justify-between space-x-20 p-10  rounded-lg shadow-lg bg-[#F8F8F8]   "
               >
                 <div className="flex flex-col">
                   <h4 className="text-3xl font-medium ">{project.name}</h4>
@@ -113,7 +113,13 @@ const Repositorio = ({ corename, coreillustration, serializedRepoData }) => {
                     ))}
                   </div>
                 </div>
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center space-y-16 items-center">
+                  <img
+                    src={project.image}
+                    alt="project image"
+                    className="object-cover w-96 h-72 rounded-lg"
+                  />
+
                   <div className="flex flex-row space-x-8 justify-between mt-5">
                     <a
                       href={project.article}
