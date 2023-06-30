@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const Profesores = () => {
+const Profesores = ({ professors }) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -28,127 +28,9 @@ const Profesores = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
             <motion.div variants={scrollAnimation}>
-              <Testimoni />
+              <Testimoni professors={professors} />
             </motion.div>
           </ScrollAnimationWrapper>
-          {/* <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-4 gap-4 lg:gap-14 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper>
-              <motion.div
-                variants={scrollAnimation}
-                className="border-2 border-gray-500 rounded-xl"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
-              >
-                <img
-                  class="rounded-t-lg h-52 min-h-full object-cover"
-                  src="/assets/proyecto1.jpg"
-                  alt=""
-                />
-                <div class="p-5">
-                  <a href="#">
-                    <h5 class="mb-2 text-2xl text-gray-900">
-                      Proyecto ing. civil
-                    </h5>
-                  </a>
-                  <p class="mb-3 text-gray-700">
-                    Breve descripción del proyecto
-                  </p>
-                  <ButtonOutline>Ver más</ButtonOutline>
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper>
-              <motion.div
-                variants={scrollAnimation}
-                className="border-2 border-gray-500 rounded-xl"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
-              >
-                <img
-                  class="rounded-t-lg h-52 object-cover min-w-full"
-                  src="/assets/proyecto2.jpg"
-                  alt=""
-                />
-                <div class="p-5">
-                  <a href="#">
-                    <h5 class="mb-2 text-2xl text-gray-900">
-                      Proyecto ing. mecatrónica
-                    </h5>
-                  </a>
-                  <p class="mb-3 text-gray-700">
-                    Breve descripción del proyecto
-                  </p>
-                  <ButtonOutline>Ver más</ButtonOutline>
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper>
-              <motion.div
-                variants={scrollAnimation}
-                className="border-2 border-gray-500 rounded-xl"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
-              >
-                <img
-                  class="rounded-t-lg h-52 min-h-full object-cover"
-                  src="/assets/proyecto3.jpg"
-                  alt=""
-                />
-                <div class="p-5">
-                  <a href="#">
-                    <h5 class="mb-2 text-2xl text-gray-900">
-                      Proyecto ing. en sistemas
-                    </h5>
-                  </a>
-                  <p class="mb-3 text-gray-700">
-                    Breve descripción del proyecto
-                  </p>
-                  <ButtonOutline>Ver más</ButtonOutline>
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper>
-              <motion.div
-                variants={scrollAnimation}
-                className="border-2 border-gray-500 rounded-xl"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.2,
-                  },
-                }}
-              >
-                <img
-                  class="rounded-t-lg h-52 min-w-full object-cover"
-                  src="/assets/proyecto4.jpg"
-                  alt=""
-                />
-                <div class="p-5">
-                  <a href="#">
-                    <h5 class="mb-2 text-2xl text-gray-900">
-                      Proyecto ing. química
-                    </h5>
-                  </a>
-                  <p class="mb-3 text-gray-700">
-                    Breve descripción del proyecto
-                  </p>
-                  <ButtonOutline>Ver más</ButtonOutline>
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
-          </div> */}
         </div>
       </div>
     </div>

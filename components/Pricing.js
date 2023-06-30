@@ -1,9 +1,5 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
-import Testimoni from "./Testimoni";
-import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
-import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
@@ -16,10 +12,10 @@ const cores = [
     href: "/nucleos/MEMBSA",
   },
   {
-    id: "LIN",
+    id: "LIIN",
     name: "Logística, Industrial y Negocios",
     illustration: "/assets/lin.svg",
-    href: "/nucleos/LIN",
+    href: "/nucleos/LIIN",
   },
   {
     id: "QB",
@@ -33,6 +29,12 @@ const cores = [
     illustration: "/assets/civil.svg",
     href: "/nucleos/CIVIL",
   },
+  {
+    id: "CB",
+    name: "Ciencias Básicas",
+    illustration: "/assets/cb.svg",
+    href: "/nucleos/CB",
+  },
 ];
 
 const Pricing = () => {
@@ -43,8 +45,8 @@ const Pricing = () => {
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="proyects"
     >
-      <div className="px-6 sm:px-8 lg:px-16 mt-10 mx-auto flex flex-col w-full justify-center">
-        <div className="flex flex-col w-full">
+      <div className="px-6 sm:px-8 lg:px-16 mt-10 mx-auto flex flex-col w-full justify-center ">
+        <div className="flex flex-col w-full ">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -53,7 +55,7 @@ const Pricing = () => {
               Núcleos Académicos
             </motion.h3>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-4 gap-4 lg:gap-14 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-4 gap-4 lg:gap-14 py-8 lg:py-12 px-6 sm:px-0 lg:px-6 ">
             {cores.map((core, index) => (
               <ScrollAnimationWrapper>
                 <motion.div

@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../../components/Layout/Layout";
 import { db } from "../../firebase/firebaseClient";
 import Head from "next/head";
-import Image from "next/image";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import ButtonPrimary from "../../components/misc/ButtonPrimary";
 import Profesores from "../../components/Profesores";
@@ -18,8 +17,8 @@ export async function getServerSideProps(context) {
       href: "/nucleos/MEMBSA",
     },
     {
-      id: "LIN",
-      name: "LIN (Logística, Industrial y Negocios)",
+      id: "LIIN",
+      name: "LIIN (Logística, Industrial y Negocios)",
       illustration: "/../assets/lin.svg",
       href: "/nucleos/LIN",
     },
@@ -34,6 +33,12 @@ export async function getServerSideProps(context) {
       name: "Civil",
       illustration: "/../assets/civil.svg",
       href: "/nucleos/CIVIL",
+    },
+    {
+      id: "CB",
+      name: "CB (Ciencias Básicas)",
+      illustration: "/../assets/cb.svg",
+      href: "/nucleos/CB",
     },
   ];
 
@@ -58,17 +63,36 @@ export async function getServerSideProps(context) {
 
   const serializedRepoData = JSON.stringify(projects);
 
+  const professors = [];
+
+  const q2 = query(collection(db, "professors"), where("core", "==", id));
+
+  const querySnapshot2 = await getDocs(q2);
+  querySnapshot2.forEach((doc) => {
+    const professor = doc.data();
+    professors.push(professor);
+  });
+
+  const serializedProfessorsData = JSON.stringify(professors);
+
   return {
     props: {
       corename: cores.find((core) => core.id === id).name,
       coreillustration: cores.find((core) => core.id === id).illustration,
       serializedRepoData,
+      serializedProfessorsData,
     },
   };
 }
 
-const Repositorio = ({ corename, coreillustration, serializedRepoData }) => {
+const Repositorio = ({
+  corename,
+  coreillustration,
+  serializedRepoData,
+  serializedProfessorsData,
+}) => {
   const repoData = JSON.parse(serializedRepoData);
+  const professorsData = JSON.parse(serializedProfessorsData);
 
   return (
     <Layout imgSrc={"../assets/Logo.svg"}>
@@ -141,8 +165,8 @@ const Repositorio = ({ corename, coreillustration, serializedRepoData }) => {
             ))}
           </div>
         </div>
-        <Profesores />
       </div>
+      <Profesores professors={professorsData} />
     </Layout>
   );
 };

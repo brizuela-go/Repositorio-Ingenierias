@@ -12,7 +12,7 @@ export default function Home() {
       <Layout imgSrc={"assets/Logo.svg"}>
         <Hero />
         <Pricing />
-        <Profesores />
+
         <Spaces />
         {/* <Feature /> */}
       </Layout>
