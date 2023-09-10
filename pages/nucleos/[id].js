@@ -113,38 +113,41 @@ const Repositorio = ({
           </div>
           <img src={coreillustration} height={100} width={500} />
         </div>
-        <div className="my-36">
-          <h3 className="text-5xl font-medium">Proyectos Destacados</h3>
-          <div className="grid grid-cols-1 gap-24 my-20">
+        <div className="my-8 lg:my-36">
+          <h3 className="text-4xl lg:text-5xl font-medium text-center lg:text-left">
+            Proyectos Destacados
+          </h3>
+          <div className="grid grid-cols-1 gap-8 lg:gap-24 my-10 lg:my-20">
             {repoData.map((project, index) => (
               <div
                 key={index}
-                className="flex lg:flex-row flex-col justify-between space-x-20 p-10  rounded-lg shadow-lg bg-card-100   "
+                className="flex flex-col lg:flex-row justify-center lg:justify-between space-y-8 lg:space-y-0 lg:space-x-20 p-4 lg:p-10 rounded-lg shadow-lg bg-card-100"
               >
                 <div className="flex flex-col">
-                  <h4 className="text-3xl font-medium ">{project.name}</h4>
-                  <p className="mt-4 text-lg text-justify">
+                  <h4 className="text-2xl lg:text-3xl font-medium text-center lg:text-left">
+                    {project.name}
+                  </h4>
+                  <p className="mt-4 text-base lg:text-lg text-center lg:text-justify">
                     {project.abstract}
                   </p>
-                  <div className="mt-5">
+                  <div className="mt-5 flex flex-wrap justify-center lg:justify-start">
                     {project?.tags?.map((tag, index) => (
                       <span
                         key={index}
-                        className="px-4 py-1 mt-4 mr-2 text-sm font-semibold text-white-300 bg-orange-500 rounded-full"
+                        className="px-2 lg:px-4 py-1 mt-2 lg:mt-4 mx-1 lg:mx-2 text-xs lg:text-sm font-semibold text-white-300 bg-orange-500 rounded-full"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="flex flex-col justify-center space-y-16 items-center">
+                <div className="flex flex-col justify-center items-center">
                   <img
                     src={project.image}
                     alt="project image"
-                    className="object-cover w-96 h-72 rounded-lg"
+                    className="object-cover w-full lg:w-96 h-48 lg:h-72 rounded-lg"
                   />
-
-                  <div className="flex flex-row space-x-8 justify-between mt-5">
+                  <div className="flex flex-row space-x-4 lg:space-x-8 justify-center lg:justify-between mt-4 lg:mt-5">
                     <a
                       href={project.article}
                       target="_blank"
