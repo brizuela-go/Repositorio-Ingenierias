@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 import ButtonPrimary from "./misc/ButtonPrimary";
+import Link from "next/link";
 
 import { db } from "../firebase/firebaseClient";
 import { collection, doc, getDocs } from "firebase/firestore";
@@ -81,9 +82,9 @@ const SliderProyects = ({}) => {
                 </div>
               </div>
               <div className="min-w-full absolute bottom-10">
-                <a href={`repositorios/${project.id}`}>
-                  <ButtonPrimary>Ver más</ButtonPrimary>
-                </a>
+                <ButtonPrimary>
+                  <Link href={`repositorios/${project.id}`}>Ver más</Link>
+                </ButtonPrimary>
               </div>
             </div>
           </div>

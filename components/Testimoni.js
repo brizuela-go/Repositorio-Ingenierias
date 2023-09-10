@@ -1,6 +1,5 @@
 import React from "react";
 const Testimoni = ({ professors }) => {
-  console.log(professors);
   return (
     <>
       <div className="grid gap-y-14 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">

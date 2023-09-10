@@ -3,6 +3,7 @@ import ButtonOutline from "./misc/ButtonOutline.";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Link from "next/link";
 
 const cores = [
   {
@@ -57,9 +58,8 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-4 gap-4 lg:gap-14 py-8 lg:py-12 px-6 sm:px-0 lg:px-6 ">
             {cores.map((core, index) => (
-              <ScrollAnimationWrapper>
+              <ScrollAnimationWrapper key={index}>
                 <motion.div
-                  key={index}
                   variants={scrollAnimation}
                   className="border-2 border-gray-500 rounded-xl "
                   whileHover={{
@@ -75,16 +75,16 @@ const Pricing = () => {
                     alt={core.id}
                   />
                   <div class="p-5 h-52 flex flex-col justify-between items-stretch ">
-                    <a href={core.href}>
-                      <h5 class="mb-2 text-2xl text-gray-900 text-center hover:underline transition duration-150 ease-in-out ">
+                    <Link href={core.href}>
+                      <h5 class="cursor-pointer mb-2 text-2xl text-gray-900 text-center hover:underline transition duration-150 ease-in-out ">
                         {core.id}
                       </h5>
-                    </a>
+                    </Link>
                     <p class="mb-3 text-gray-700 text-center">{core.name}</p>
                     <div className="text-center ">
-                      <a href={core.href}>
-                        <ButtonOutline>Ver más</ButtonOutline>
-                      </a>
+                      <ButtonOutline>
+                        <Link href={core.href}>Ver más</Link>
+                      </ButtonOutline>
                     </div>
                   </div>
                 </motion.div>

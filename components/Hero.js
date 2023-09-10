@@ -30,8 +30,8 @@ const Hero = ({
 
   return (
     <div
-      className="bg-center bg-cover bg-fixed filter"
-      style={{ backgroundImage: "url('/assets/hero1.jpg')" }}
+      className="bg-center bg-cover lg:bg-fixed filter bg-[url('/assets/hero1.jpg')] 
+      "
       id="about"
     >
       <div className="mt-24 px-8 xl:px-16">
