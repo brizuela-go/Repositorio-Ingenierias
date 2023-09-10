@@ -83,7 +83,7 @@ const SliderProyects = ({}) => {
               </div>
               <div className="min-w-full absolute bottom-10">
                 <ButtonPrimary>
-                  <Link href={`repositorios/${project.id}`}>Ver más</Link>
+                  <a href={`repositorios/${project.id}`}>Ver más</a>
                 </ButtonPrimary>
               </div>
             </div>

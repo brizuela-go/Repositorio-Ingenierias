@@ -75,15 +75,15 @@ const Pricing = () => {
                     alt={core.id}
                   />
                   <div class="p-5 h-52 flex flex-col justify-between items-stretch ">
-                    <Link href={core.href}>
+                    <a href={core.href}>
                       <h5 class="cursor-pointer mb-2 text-2xl text-gray-900 text-center hover:underline transition duration-150 ease-in-out ">
                         {core.id}
                       </h5>
-                    </Link>
+                    </a>
                     <p class="mb-3 text-gray-700 text-center">{core.name}</p>
                     <div className="text-center ">
                       <ButtonOutline>
-                        <Link href={core.href}>Ver más</Link>
+                        <a href={core.href}>Ver más</a>
                       </ButtonOutline>
                     </div>
                   </div>

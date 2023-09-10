@@ -64,7 +64,7 @@ const Header = ({ imgSrc }) => {
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             {routes.map((route, index) => (
-              <Link key={index} href={route.path}>
+              <a key={index} href={route.path}>
                 <p
                   className={
                     "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
@@ -75,15 +75,15 @@ const Header = ({ imgSrc }) => {
                 >
                   {route.name}
                 </p>
-              </Link>
+              </a>
             ))}
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
+            <a href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
                   Inicia Sesión
               </a>
-            </Link>
+            </a>
             <ButtonOutline>Registrate</ButtonOutline>
           </div>
         </nav>
@@ -93,7 +93,7 @@ const Header = ({ imgSrc }) => {
         <div className="bg-white-500 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             {routes.map((route, index) => (
-              <Link key={index} href={route.path}>
+              <a key={index} href={route.path}>
                 <div
                   className={
                     "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
@@ -105,7 +105,7 @@ const Header = ({ imgSrc }) => {
                   <route.icon className="w-5 h-5 mb-1" />
                   {route.name}
                 </div>
-              </Link>
+              </a>
             ))}
           </ul>
         </div>
